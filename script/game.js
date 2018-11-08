@@ -109,10 +109,16 @@ Game.prototype.isCollision = function() {
         this.ctx.fillText("LeveL UP¡¡", 300, 430);
         this.reset();
         setTimeout(function(){
-            this.startGame();
+        this.startGame();
         }.bind(this),3000)
         
       }
+  }
+  Game.prototype.gameOver=function() {
+      clearInterval(this.interval)
+      this.ctx.font="100px sans-serif"
+      this.ctx.fillStyle="green"
+      this.ctx.fillText("Game Over¡¡¡", 300, 430);
   }
 
 

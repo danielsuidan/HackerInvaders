@@ -19,7 +19,8 @@ Aliens.prototype.Move = function () {
     if (this.x >= this.game.canvas.width || this.x < 0) {
         this.y-=-30
         this.vx *= -1;
-
-
+    }
+    if(this.y>=this.game.width-500){
+        this.game.gameOver()
     }
 }
