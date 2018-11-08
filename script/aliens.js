@@ -16,11 +16,12 @@ Aliens.prototype.Draw = function () {
 }
 Aliens.prototype.Move = function () {
     this.x += this.vx;
-    if (this.x >= this.game.canvas.width || this.x < 0) {
-        this.y-=-30
+    if (this.x >= this.game.canvas.width-40 || this.x < 0) {
+        this.y-=-50
         this.vx *= -1;
     }
     if(this.y>=this.game.width-500){
-        this.game.gameOver()
+        this.vx=0;
+        this.game.gameOver() 
     }
 }
