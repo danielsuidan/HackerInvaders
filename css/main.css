@@ -9,6 +9,7 @@
     font-family: panel;
     src: url(../src/font/ARCADE.woff);
 }
+
 button{
     width:15rem;
     height: 15rem;
@@ -23,6 +24,12 @@ button{
     border-right-color: blue;
     
 }
+.container-game{
+    display: flex;
+    flex-direction: row;
+}
+
+
 .start{
     text-align: center;
 }
@@ -32,4 +39,30 @@ button{
 }
 .oculto{
     display: none;
+}
+.space-back{
+    width:100%;
+    background-image: url("../src/img/galaxy-infinity-milky-way-110854.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.invaders{
+    font-family: panel;
+    font-size: 60px;
+    color:red;
+    margin-left: 300px;
+    margin-top: 300px;
+}
+.keyboard{
+    margin-left: 350px;
+    margin-top: 40px;
+    width: 100px;
+    height: 100px;
+}
+.instruc{
+    font-size: 30px;
+    margin-left: 300px;
+    color:lime;
+    font-family: panel;
 }

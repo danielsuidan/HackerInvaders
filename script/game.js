@@ -18,7 +18,7 @@ Game.prototype.reset=function(){
     
 }
 Game.prototype.startGame=function(){
-     console.log("pepe")
+
      this.interval= setInterval(function(){
         this.clear();
         this.DrawAll();
