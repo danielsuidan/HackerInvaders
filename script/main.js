@@ -1,5 +1,6 @@
 window.onload=function(){
     var game=new Game("game");
+    document.getElementsByTagName("audio")[0].classList.add("oculto");
     document.getElementById("invader").classList.add("oculto") 
     document.getElementsByTagName("canvas")[0].classList.add("oculto");
     document.getElementById("Start").onclick=function(){
